@@ -5,7 +5,17 @@
 
 body {
   padding-top: 60px;
+
 }
+
+#main1{
+  background-color: #ffffff;
+}
+
+#top-main{
+  background-color: #ffffff;
+}
+
 
 section {
   overflow: auto;
@@ -37,12 +47,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 3em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: #000000;
 }
 
 p {
@@ -50,23 +60,65 @@ p {
   line-height: 1.7em;
 }
 
-/* ヘッダー */
+/*ヘッダー */
+
+
+
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
+  color: #ffffff;
+  text-transform: none;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
 }
 
 #logo:hover {
-  color: #fff;
+  color: #808080;
   text-decoration: none;
 }
+
+.user-name {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#rightlogo{
+  color: #ffffff;
+  font-weight:bold
+}
+
+#rightlogo:hover{
+  color: #808080;
+  text-decoration: none;
+}
+
+
+#right2logo{
+  color: #ffffff;
+  font-weight:bold
+}
+
+#right2logo:hover{
+  color: #808080;
+  text-decoration: none;
+}
+
+#right3logo{
+  color: #ffffff;
+  font-weight:bold
+}
+
+#right3logo:hover{
+  color: #808080;
+  text-decoration: none;
+}
+
+
 
 /* デバッグウインドウ */
 
