@@ -25,12 +25,16 @@
   
         <label class="label-form" for="session_password">パスワード</label>
         <input class="form-control" type="password" name="session[password]" />
-        
-        <label class="checkbox inline checkbox-login" for="remember-me">
-          <input name="session[remember_me]" type="hidden" value="0" /><input id="remember-me" type="checkbox" value="1" name="session[remember_me]" />
-          <span>ログイン情報を記憶する</span>
-</label>        
-        <input type="submit" name="commit" value="ログイン" class="btn btn-primary btn-block btn-form" data-disable-with="ログイン" />
-</form>  </div>
+        <% if logged_in? %>
+             <br><input type="submit" name="commit" value="ログイン状態です。" class="btn btn-primary btn-block btn-form" disabled="disabled" data-disable-with="ログイン状態です。" />
+        <% else %>
+          <label class="checkbox inline checkbox-login" for="remember-me">
+            <input name="session[remember_me]" type="hidden" value="0" /><input id="remember-me" type="checkbox" value="1" name="session[remember_me]" />
+            <span>ログイン情報を記憶する</span>
+          </label>        
+            <input type="submit" name="commit" value="ログイン" class="btn btn-primary btn-block btn-form" data-disable-with="ログイン" />
+        <% end %>
+    </form>
+  </div>
 </div>
 
