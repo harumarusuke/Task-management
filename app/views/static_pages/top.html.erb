@@ -10,7 +10,11 @@
       <p>TaskAppは簡易ToDo管理ツールです。</p>
       <p>↓↓初めてのご利用↓↓</p>
       <% if logged_in? %>
-        <a class="btn btn-lg btn-success" disabled="disabled">アカウント作成</a>
+        <% if current_user.admin? %>
+          <a class="btn btn-lg btn-success" href="/signup" >アカウント作成</a>
+        <% else %>
+          <a class="btn btn-lg btn-success" disabled="disabled">アカウント作成</a>
+        <% end %>
       <% else %>
         <a class="btn btn-lg btn-success" href="/signup">アカウント作成</a>
       <% end %>
