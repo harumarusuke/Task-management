@@ -98,6 +98,17 @@ p {
 }
 
 
+#rightlogo1{
+  color: #ffffff;
+  font-weight:bold
+}
+
+#rightlogo:hover{
+  color: #808080;
+  text-decoration: none;
+}
+
+
 #right2logo{
   color: #ffffff;
   font-weight:bold
@@ -118,7 +129,19 @@ p {
   text-decoration: none;
 }
 
+li .dropdown-header {
+    background-color: rgba(200,200,200,0.5);
+    font-weight: bold;
+}
 
+.dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-size: 12px;
+    line-height: 1.428571429;
+    color: #777777;
+    white-space: nowrap;
+}
 
 /* デバッグウインドウ */
 

@@ -1,0 +1,28 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.lable-title {
+  margin-top: 5px;
+}
+
+.btn-tasknew {
+  margin-top: 10px;
+}
+
+
+#task-name {
+  font-size: 1.8rem;
+}
+
+
+
+#table-tasks {
+  table-layout: fixed; width: 100%;
+    th {
+      vertical-align: middle;
+    }
+    td {
+      vertical-align: middle;
+    }
+}
+

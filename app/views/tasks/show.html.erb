@@ -1,0 +1,40 @@
+<% provide(:title, 'Task show') %>
+
+
+<h1><%= current_user.name %>のタスク詳細</h1>
+<div class="row">
+	<div class="col-md-10 col-md-offset-1">
+		<table class="table table-bordered" id="table-show">
+			<tbody>
+				<tr>
+					<th class="text-center active">ID</th>
+					<td><%= @task.id %></td>
+				</tr>
+				<tr>
+					<th class="text-center active">名称</th>
+					<td><%= @task.title %></td>
+				</tr>
+				<tr>
+					<th class="text-center active">詳細</th>
+					<td><%= raw Rinku.auto_link(h(@task.note)) %></td>
+				</tr>
+				<tr>
+					<th class="text-center active">作成日</th>
+					<td><%= @task.created_at %></td>
+				</tr>
+				<tr>
+					<th class="text-center active">更新日</th>
+					<td><%= @task.updated_at %></td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			<%= link_to "編集", edit_user_task_path(@user, @task), class: "btn btn-success" %>
+			<%= link_to "削除", user_task_path(@user,@task), method: :delete,
+					data: { confirm: "#{@task.title}を削除してよろしいですか？" },
+					class: "btn btn-danger" %>
+		</div>
+
+	</div>
+</div>
+
